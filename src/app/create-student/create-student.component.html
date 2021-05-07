@@ -1,0 +1,34 @@
+<h3>Create Student</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Student Id</label>
+      <input type="text" class="form-control" id="studentId" required [(ngModel)]="student.studentId" name="studentId">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Student First name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="student.firstName" name="firstName">
+    </div>
+    <div class="form-group">
+        <label for="name">Student Last name</label>
+        <input type="text" class="form-control" id="lastName" required [(ngModel)]="student.lastName" name="lastName">
+      </div>
+      <div class="form-group">
+        <label for="name">Student gender</label>
+        <input type="text" class="form-control" id="gender" required [(ngModel)]="student.gender" name="gender">
+      </div>
+      <div class="form-group">
+        <label for="name">Student semester</label>
+        <input type="number" class="form-control" id="semester" required [(ngModel)]="student.semester" name="semester">
+      </div>
+      <div class="form-group">
+        <label for="name">Student mobile no.</label>
+        <input type="number" class="form-control" id="mobileNumber" required [(ngModel)]="student.mobileNumber" name="mobileNumber">
+      </div>
+  
+  
+
+    <button class="btn btn-success">Create Student</button>
+  </form>
+</div>

@@ -1,0 +1,34 @@
+<h3>
+    Update Student
+  </h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">Student Id</label>
+            <input type="text" class="form-control" id="studentId" required [(ngModel)]="student.studentId" name="studentId">
+          </div>
+      
+          <div class="form-group">
+            <label for="name">Student firstName</label>
+            <input type="text" class="form-control" id="firstName" required [(ngModel)]="student.firstName" name="firstName">
+          </div>
+          <div class="form-group">
+              <label for="name">Student lastName</label>
+              <input type="text" class="form-control" id="lastName" required [(ngModel)]="student.lastName" name="lastName">
+            </div>
+            <div class="form-group">
+              <label for="name">Student gender</label>
+              <input type="name" class="form-control" id="gender" required [(ngModel)]="student.gender" name="gender">
+            </div>
+            <div class="form-group">
+              <label for="name">Student semester</label>
+              <input type="number" class="form-control" id="semester" required [(ngModel)]="student.semester" name="semester">
+            </div>
+            <div class="form-group">
+              <label for="name">Student mobile no.</label>
+              <input type="number" class="form-control" id="mobileNumber" required [(ngModel)]="student.mobileNumber" name="mobileNumber">
+            </div>
+
+  <button style='margin-right:16px' class="btn btn-success">Submit</button>
+  <button style='margin-right:16px' (click)="list()" class="btn btn-success">Back to Students</button>
+
+  </form>
